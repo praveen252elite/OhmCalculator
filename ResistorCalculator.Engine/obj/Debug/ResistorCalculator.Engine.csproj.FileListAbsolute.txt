@@ -1,0 +1,6 @@
+C:\Users\tapz45\source\repos\ResistanceClaculator\ResistorCalculator.Engine\bin\Debug\ResistorCalculator.Engine.dll
+C:\Users\tapz45\source\repos\ResistanceClaculator\ResistorCalculator.Engine\bin\Debug\ResistorCalculator.Engine.pdb
+C:\Users\tapz45\source\repos\ResistanceClaculator\ResistorCalculator.Engine\obj\Debug\ResistorCalculator.Engine.csproj.CoreCompileInputs.cache
+C:\Users\tapz45\source\repos\ResistanceClaculator\ResistorCalculator.Engine\obj\Debug\ResistorCalculator.Engine.dll
+C:\Users\tapz45\source\repos\ResistanceClaculator\ResistorCalculator.Engine\obj\Debug\ResistorCalculator.Engine.pdb
+C:\Users\tapz45\source\repos\ResistanceClaculator\ResistorCalculator.Engine\obj\Debug\ResistorCalculator.Engine.csprojResolveAssemblyReference.cache

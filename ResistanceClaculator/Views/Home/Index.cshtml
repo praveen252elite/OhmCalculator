@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model ResistanceClaculator.Models.ResistorViewModel
+
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="page-header text-center text-primary">
+            <h1>Resistance calculator <small>(Code sample)</small></h1>
+        </div>
+
+    </div>
+</div>
+<br />
+
+   
+        <div class="row" id="errors">
+            <div class="col-md-12">
+                <div class="alert alert-danger">
+                    <button class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    @Html.ValidationSummary(false, "Errors: ")
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">Ohm Value Calculator</div>
+            <div class="panel-body">             
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="input-group required">
+                            <span class="input-group-addon">BandA</span>
+                            @Html.DropDownListFor(x => x.SelectedColorA, Model.ColorsA, new { @class = "form-control band-select", @id = "A" })
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="input-group required">
+                            <span class="input-group-addon">BandB</span>
+                            @Html.DropDownListFor(x => x.SelectedColorB, Model.ColorsB, new { @class = "form-control band-select", @id = "B" })
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="input-group required">
+                            <span class="input-group-addon">BandC</span>
+                            @Html.DropDownListFor(x => x.SelectedColorC, Model.ColorsC, new { @class = "form-control band-select", @id = "C" })
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+
+                        <div class="resistor">
+                            <div class="rectangle">
+                                <div class="colorstrip" id="BandA">
+                                    <span class="marker">
+                                        A
+                                    </span>
+                                </div>
+                                <div class="colorstrip" id="BandB">
+                                    <span class="marker">
+                                        B
+                                    </span>
+                                </div>
+                                <div class="colorstrip" id="BandC">
+                                    <span class="marker">
+                                        C
+                                    </span>
+                                </div>
+                                <div class="colorstrip" id="BandD">
+                                    <span class="marker">
+                                        D
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <span class="input-group-addon">BandD</span>
+                            @Html.DropDownListFor(x => x.SelectedColorD, Model.ColorsD, new { @class = "form-control band-select", @id = "D" })
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        @*@Html.LabelFor(x => x.ComputedResult, Model.ComputedResult, new { @class = "text-info text-center" })*@
+                        <div id="result" class="text-danger text-center"></div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="submit" class="btn btn-success" onclick="return Calculate();">Calculate <span class="glyphicon glyphicon-hand-up"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+   
+   
+  
+
